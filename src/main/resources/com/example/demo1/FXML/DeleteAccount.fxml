@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.fxmlControllers.DeleteAccountController">
+    <ImageView fitHeight="730.0" fitWidth="1343.0" layoutX="-5.0" layoutY="-3.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@background.png" />
+        </image>
+    </ImageView>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="109.0" prefHeight="140.0" prefWidth="1024.0" text="Are you sure you want to delete your account?">
+      <font>
+         <Font name="Comic Sans MS" size="38.0" />
+      </font>
+   </Label>
+   <Button fx:id="no" layoutX="377.0" layoutY="334.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="141.0" text="No" textFill="#ff0d00" onMouseClicked="#no">
+      <font>
+         <Font name="System Bold" size="29.0" />
+      </font>
+   </Button>
+   <Button fx:id="yes" layoutX="761.0" layoutY="334.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="141.0" text="Yes" textFill="#0e701d" onMouseClicked="#yes">
+      <font>
+         <Font name="System Bold" size="29.0" />
+      </font>
+   </Button>
+
+
+</AnchorPane>

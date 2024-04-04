@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import org.kordamp.bootstrapfx.scene.layout.Panel?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane xmlns:fx="http://javafx.com/fxml"
+      fx:id="content"
+      fx:controller="com.example.demo1.controller.BackgroundController"
+      stylesheets="@../../CSS/Game.css" prefWidth="1280" prefHeight="720">
+
+</Pane>

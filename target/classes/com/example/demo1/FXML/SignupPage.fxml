@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.fxmlControllers.SignupPageController">
+    <ImageView fitHeight="730.0" fitWidth="1343.0" layoutX="-5.0" layoutY="-3.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@background.png" />
+        </image>
+    </ImageView>
+        <VBox alignment="CENTER" layoutX="431.0" layoutY="153.0" maxWidth="500" prefHeight="415.0" prefWidth="419.0" spacing="10">
+
+            <Text id="title" text="Sign Up" textAlignment="CENTER" wrappingWidth="152.177734375">
+            <font>
+               <Font name="Comic Sans MS" size="12.0" />
+            </font></Text>
+            <Label text="Username" />
+            <TextField fx:id="username" onKeyPressed="#assess" promptText="Enter your username" />
+            <Label fx:id="usernameWarning" text="This username is already taken" visible="false" />
+            <Label text="Password" />
+            <TextField fx:id="password" onKeyPressed="#assess" promptText="Enter your password" />
+            <Label fx:id="passwordWarning" text="Your password should be at least 8 characters." visible="false" />
+            <Button fx:id="SignUpButton" onMouseClicked="#signUp" prefHeight="25.0" prefWidth="137.0" styleClass="primary-btn" text="Create Account" />
+
+        </VBox>
+   <ImageView fx:id="back" fitHeight="72.0" fitWidth="81.0" layoutX="231.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#back">
+      <image>
+         <Image url="@back.png" />
+      </image>
+   </ImageView>
+
+
+
+</AnchorPane>

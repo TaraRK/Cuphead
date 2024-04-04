@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" onMouseEntered="#setText" prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.fxmlControllers.ProfileController">
+
+   <children>
+      <AnchorPane layoutX="0" layoutY="0.0" prefHeight="720" prefWidth="1280">
+         <ImageView fitHeight="732.0" fitWidth="1361.0" layoutX="-68.0" layoutY="-3.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@background.png" />
+            </image>
+         </ImageView>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="525.0" layoutY="70.0" prefHeight="42.0" prefWidth="215.0" text="Profile" textFill="#5c289a">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="35.0" />
+               </font>
+               <effect>
+
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="445.0" layoutY="202.0" prefHeight="245.0" prefWidth="419.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Username">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="21.0" />
+               </font></Label>
+            <Label fx:id="username" layoutX="14.0" layoutY="50.0" />
+            <Label layoutX="14.0" layoutY="92.0" text="Score">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="21.0" />
+               </font></Label>
+            <Label fx:id="score" layoutX="14.0" layoutY="128.0" />
+            <ImageView fx:id="avatar" fitHeight="190.0" fitWidth="223.0" layoutX="234.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cuphead1.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="18.0" layoutY="201.0" mnemonicParsing="false" onMouseClicked="#edit" prefHeight="25.0" prefWidth="54.0" text="Edit" />
+         </children>
+      </AnchorPane>
+      <ToolBar layoutX="452.0" layoutY="567.0" prefHeight="40.0" prefWidth="382.0">
+        <items>
+          <Button fx:id="logout" mnemonicParsing="false" onMouseClicked="#back" prefHeight="25.0" prefWidth="118.0" text="Logout" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" text="Start Game" onMouseClicked="#Play"/>
+            <Button fx:id="" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" text="Delete account" onMouseClicked="#deleteAccount"/>
+        </items>
+      </ToolBar>
+      <ImageView fitHeight="84.0" fitWidth="77.0" layoutX="211.0" layoutY="43.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

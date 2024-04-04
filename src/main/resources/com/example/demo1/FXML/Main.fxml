@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="720" prefWidth="1280" stylesheets="@../CSS/Menu.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.fxmlControllers.MainController">
+<center>
+    <VBox alignment="CENTER" maxWidth="400" prefHeight="720.0" prefWidth="408.0" spacing="10">
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="261.0" text="Welcome to CUPHEAD!" textAlignment="CENTER" wrapText="true">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="226.0" fitWidth="241.0" pickOnBounds="true">
+            <image>
+               <Image url="@CupHead.jpg" />
+            </image>
+         </ImageView>
+        <Button fx:id="SignUpButton" onMouseClicked="#moveToSignUp" prefHeight="25.0" prefWidth="180.0" styleClass="mainButton" text="Sign Up" textFill="#efeff2" />
+        <Button fx:id="Login" onMouseClicked="#moveToLogin" prefHeight="25.0" prefWidth="182.0" styleClass="mainButton" text="Login" textFill="#eff5f2" />
+         <Button mnemonicParsing="false" onMouseClicked="#Play" prefHeight="25.0" prefWidth="182.0" styleClass="mainButton" text="Play as a guest" textFill="#f3f2f2" />
+         <Button fx:id="scoreboard" layoutX="119.0" layoutY="498.0" onMouseClicked="#moveToScoreboard" prefHeight="25.0" prefWidth="182.0" styleClass="mainButton" text="Scoreboard" textFill="#eff5f2"/>
+    </VBox>
+</center>
+
+</BorderPane>

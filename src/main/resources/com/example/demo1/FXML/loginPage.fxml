@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.fxmlControllers.LoginPageController">
+    <ImageView fitHeight="730.0" fitWidth="1343.0" layoutX="-5.0" layoutY="-3.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@background.png" />
+        </image>
+    </ImageView>
+        <VBox alignment="CENTER" layoutX="463.0" layoutY="176.0" maxWidth="500" prefHeight="369.0" prefWidth="354.0" spacing="10">
+            <Text id="title" text="Login" />
+            <Label text="Username" />
+            <TextField fx:id="username" promptText="Enter your username" />
+            <Label text="Password" />
+            <TextField fx:id="password" promptText="Enter your password" />
+            <Button fx:id="LoginButton" onMouseClicked="#login" styleClass="primary-btn" text="Login" />
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="98.0" text="Invalid Login" textAlignment="CENTER" textFill="#ee0808" visible="false" fx:id="warning"/>
+
+        </VBox>
+   <ImageView fitHeight="67.0" fitWidth="65.0" layoutX="330.0" layoutY="64.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@back.png" />
+      </image>
+   </ImageView>
+
+
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.fxmlControllers.ScoreboardController" >
+
+    <ImageView fitHeight="730.0" fitWidth="1343.0" layoutX="-5.0" layoutY="-3.0" opacity="0.35" pickOnBounds="true" preserveRatio="true" onMouseEntered="#text">
+        <image>
+            <Image url="@background.png" />
+        </image>
+    </ImageView>
+   <ImageView fitHeight="358.0" fitWidth="380.0" layoutX="465.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+       <image>
+           <Image url="@Podium.png" />
+       </image>
+   </ImageView>
+   <Label fx:id="first" alignment="CENTER" contentDisplay="CENTER" layoutX="613.0" layoutY="81.0" prefHeight="35.0" prefWidth="62.0" text="Label" textAlignment="CENTER">
+      <font>
+         <Font name="Comic Sans MS" size="12.0" />
+      </font>
+   </Label>
+   <Label fx:id="second" alignment="CENTER" contentDisplay="CENTER" layoutX="713.0" layoutY="250.0" prefHeight="35.0" prefWidth="62.0" text="Label" textAlignment="CENTER">
+      <font>
+         <Font name="Comic Sans MS" size="12.0" />
+      </font>
+   </Label>
+   <Label fx:id="Third" alignment="CENTER" contentDisplay="CENTER" layoutX="513.0" layoutY="304.0" prefHeight="35.0" prefWidth="62.0" text="Label" textAlignment="CENTER">
+      <font>
+         <Font name="Comic Sans MS" size="12.0" />
+      </font>
+   </Label>
+   <Label fx:id="forth" alignment="CENTER" contentDisplay="CENTER" layoutX="500.0" layoutY="439.0" prefHeight="35.0" prefWidth="62.0" text="Label" textAlignment="CENTER">
+      <font>
+         <Font name="Comic Sans MS" size="12.0" />
+      </font>
+   </Label>
+   <Label fx:id="seventh" alignment="CENTER" contentDisplay="CENTER" layoutX="500.0" layoutY="474.0" prefHeight="35.0" prefWidth="62.0" text="Label" textAlignment="CENTER">
+      <font>
+         <Font name="Comic Sans MS" size="12.0" />
+      </font>
+   </Label>
+   <Label fx:id="first111" alignment="CENTER" contentDisplay="CENTER" layoutX="500.0" layoutY="509.0" prefHeight="35.0" prefWidth="62.0" text="Label" textAlignment="CENTER">
+      <font>
+         <Font name="Comic Sans MS" size="12.0" />
+      </font>
+   </Label>
+   <Label fx:id="fifth" alignment="CENTER" contentDisplay="CENTER" layoutX="613.0" layoutY="439.0" prefHeight="35.0" prefWidth="62.0" text="Label" textAlignment="CENTER">
+      <font>
+         <Font name="Comic Sans MS" size="12.0" />
+      </font>
+   </Label>
+   <Label fx:id="eighth" alignment="CENTER" contentDisplay="CENTER" layoutX="613.0" layoutY="474.0" prefHeight="35.0" prefWidth="62.0" text="Label" textAlignment="CENTER">
+      <font>
+         <Font name="Comic Sans MS" size="12.0" />
+      </font>
+   </Label>
+   <Label fx:id="ninth" alignment="CENTER" contentDisplay="CENTER" layoutX="713.0" layoutY="474.0" prefHeight="35.0" prefWidth="62.0" text="Label" textAlignment="CENTER">
+      <font>
+         <Font name="Comic Sans MS" size="12.0" />
+      </font>
+   </Label>
+   <Label fx:id="sixth" alignment="CENTER" contentDisplay="CENTER" layoutX="713.0" layoutY="439.0" prefHeight="35.0" prefWidth="62.0" text="Label" textAlignment="CENTER">
+      <font>
+         <Font name="Comic Sans MS" size="12.0" />
+      </font>
+   </Label>
+   <ImageView fx:id="back" fitHeight="72.0" fitWidth="81.0" layoutX="231.0" layoutY="49.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@back.png" />
+      </image>
+   </ImageView>
+
+</AnchorPane>
